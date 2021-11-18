@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="favicon" type="image/png" href="images/logo_1.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <title>Meet Sudo</title>
+</head>
+
+<body>
+  <div class="skip"><a href="#main">Skip to Main Content</a></div>
+  <header id="main">
+    <h1>Sudo</h1>
+    <img src="images/logo_1.png" alt="" id="logo">
+    <nav>
+      <ul class="nav_links">
+        <li class="nav_item current"><a href="index.html">Home</a></li>
+        <li class="nav_item"><a href="rescue.html">Rescue Story</a></li>
+        <li class="nav_item"><a href="products.html">Must Haves</a></li>
+        <li class="nav_item"><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="about" id="skip">
+    <h1>Hi, I'm Sudo!</h1>
+
+    <p>I'm a 2 years old chinese village dog curretly living in North Carolina. I was born in Shanghai, China as a stray
+      on the street. After my parents decided to adopt me, I traveled to the United States and lived in the upper west
+      side of Manhattan for a year. Then, I moved with my family to the warm and beautiful state of North Carolina. </p>
+    <br>
+    <p>My favorite thing to do is to lay on my bed under the sun and take a good nap. I am a chill dog that prefers
+      cuddle over playtime with other dog. If I meet other dogs in the dog park, I prefer to play with dogs that are
+      smaller in size than me because I find larger dogs intimidating. Some dogs likes to play with me by chase me
+      around, in that case, I will run super fast so they are not able to catch me. My parents believe that I would be a
+      great sprinter, but I am not interested in participating in agility competition.</p>
+    <br>
+    <p>I am mainly food driven. If you want to be my friend, please have treat in hands. I can be slow to warm up to new
+      people and situation, but having great jerky in hands will accelerate that process. I have zero interest in
+      playing with balls or toys. My mom suspects that I don't know how to play with toys. I think I am just too mature
+      for that. I also like to hangout in the grass with sunlight to give me a tan.</p>
+
+    <h2 id="recent">Recently</h2>
+    <div class="recent">
+      <div class="card">
+        <header>
+          <h3>Nov 1, 2021</h3>
+        </header>
+        <figure>
+          <img src="images/IMG_4189.jpeg" alt="Sudo enjoying the weather on the patio">
+          <figcaption>Sudo enjoying the weather on the patio</figcaption>
+        </figure>
+      </div>
+      <div class="card">
+        <header>
+          <h3>Oct 2, 2021</h3>
+        </header>
+        <figure>
+          <img src="images/IMG_3711.jpg" alt="Sudo spending time at daycare">
+          <figcaption>Sudo spending time at daycare</figcaption>
+        </figure>
+      </div>
+      <div class="card">
+        <header>
+          <h3>July 6, 2021</h3>
+        </header>
+        <figure>
+          <img src="images/IMG_2007.jpg" alt="Sudo in the elevator after a walk">
+          <figcaption>Sudo in the elevator after a walk</figcaption>
+        </figure>
+      </div>
+    </div>
+
+
+
+
+    <h2 id="gallery">Gallery</h2>
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+        </li>
+      </ol>
+      
+
+    </section>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/IMG_9144.jpg" alt="sudo in the snow" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Sudo in the snow</h1>
+        </div>
+      </div>
+    </div>
+    <h2>Let's Chat</h2>
+
+    <div class="form">
+      <form action="form_info.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fristname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+  </main>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <!-- <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a> -->
+      </li>
+      <li class="carousel__navigation-item">
+        <!-- <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a> -->
+      </li>
+      <li class="carousel__navigation-item">
+        <!-- <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a> -->
+      </li>
+      <li class="carousel__navigation-item">
+        <!-- <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a> -->
+      </li>
+    </ol>
+  </aside>
+  <footer>
+    <p>&copy; Sudo Blog 2021</p>
+  </footer>
+</body>
+
+</html>
